@@ -28,11 +28,11 @@ public class Resilience4JConfigurationProperties {
 
 	private String defaultGroupTag = "none";
 
-	private boolean enableSemaphoreDefaultBulkhead = false;
+	private boolean enableSemaphoreDefaultBulkhead;
 
-	private boolean disableThreadPool = false;
+	private boolean disableThreadPool;
 
-	private boolean disableTimeLimiter = false;
+	private boolean disableTimeLimiter;
 
 	public boolean isEnableGroupMeterFilter() {
 		return enableGroupMeterFilter;

@@ -27,7 +27,7 @@ import org.springframework.cloud.client.circuitbreaker.ConfigBuilder;
 public class Resilience4JConfigBuilder
 		implements ConfigBuilder<Resilience4JConfigBuilder.Resilience4JCircuitBreakerConfiguration> {
 
-	private String id;
+	private final String id;
 
 	private TimeLimiterConfig timeLimiterConfig = TimeLimiterConfig.ofDefaults();
 

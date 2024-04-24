@@ -128,9 +128,8 @@ class SpringRetryAutoConfigurationTests {
 
 			@Bean
 			List<Customizer<SpringRetryCircuitBreakerFactory>> customizers() {
-				return Collections.singletonList(factory -> {
-					System.out.println("trying to customize");
-				});
+				return Collections.singletonList(factory ->
+					System.out.println("trying to customize"));
 			}
 
 		}

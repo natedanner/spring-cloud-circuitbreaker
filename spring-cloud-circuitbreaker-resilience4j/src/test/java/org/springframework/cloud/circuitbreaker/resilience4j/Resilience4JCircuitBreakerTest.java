@@ -40,7 +40,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class Resilience4JCircuitBreakerTest {
 
-	Resilience4JConfigurationProperties properties = null;
+	Resilience4JConfigurationProperties properties;
 
 	@Before
 	public void before() {

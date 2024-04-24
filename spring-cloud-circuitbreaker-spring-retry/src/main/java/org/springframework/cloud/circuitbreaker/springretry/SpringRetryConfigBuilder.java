@@ -37,7 +37,7 @@ public class SpringRetryConfigBuilder implements ConfigBuilder<SpringRetryConfig
 
 	private RetryPolicy retryPolicy = new CircuitBreakerRetryPolicy();
 
-	private boolean forceRefreshState = false;
+	private boolean forceRefreshState;
 
 	private Classifier<Throwable, Boolean> stateClassifier = classifiable -> false;
 

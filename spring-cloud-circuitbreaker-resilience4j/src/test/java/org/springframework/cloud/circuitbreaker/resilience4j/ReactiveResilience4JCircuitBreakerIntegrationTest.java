@@ -92,7 +92,7 @@ public class ReactiveResilience4JCircuitBreakerIntegrationTest {
 	static EventConsumer<CircuitBreakerOnSuccessEvent> normalFluxSuccessConsumer;
 
 	@LocalServerPort
-	int port = 0;
+	int port;
 
 	@Autowired
 	ReactiveResilience4JCircuitBreakerIntegrationTest.Application.DemoControllerService service;
@@ -176,7 +176,7 @@ public class ReactiveResilience4JCircuitBreakerIntegrationTest {
 		@Service
 		public static class DemoControllerService {
 
-			private int port = 0;
+			private int port;
 
 			private final ReactiveCircuitBreakerFactory cbFactory;
 
